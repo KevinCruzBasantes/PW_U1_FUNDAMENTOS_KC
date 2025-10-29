@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB</title>
+</head>
+<body>
+    <header>
+        <h1>Universidad Central del Ecuador</h1>
+        <h5>Carrera de Computacion</h5>
+    </header>
+    <nav></nav>
+    <section>
+        <!-- Cabezera de secciones-->
+        <h3>Mi primera pagina web</h3>
+        <h4>Estudiante</h4>
+        <!--Parrafos-->
+        <p>Mi primer parrafo</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <!--Textos-->
+        <strong>Texto en negrilla que quiero resaltar</strong>
+        <br>
+        <!--em da una importancia para la busqueda-->
+        <em>Texto en cursiva para enfatizar</em>
+        <br>
+        <em>Juego  de matematicas</em>
+        <br>
+        <i>Texto en cursiva</i>
+        <br>
+        <u>Texto subrayado</u>
+        <br>    
+        <s>Texto eliminado</s>
+        <br>
+        <mark>Texto resaltado</mark>
+        <br>
+        <!--Listas-->   
+
+        <h4>Lista no ordenada</h4>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <h4>Lista ordenada</h4>
+        <ol>
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+            <li>Tercer elemento</li>    
+        </ol>
+        <!--Tablas utili<zado para presentar listas-->
+        <table border="7">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Cedula</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr>
+                <th>Kevin</th>
+                <th>Cruz</th>
+                <th>12355678887</th>
+                <th><button>Editar</button></th>
+               </tr>
+               <tr>
+                <th>Juan</th>
+                <th>Perez</th>
+                <th>0987654321</th>
+                <th><button>Editar</button></th>
+               </tr>
+               <tr>
+                <th>Maria</th>
+                <th>Lopez</th>
+                <th>1122334455</th>
+                <th><button>Editar</button></th>
+               </tr> 
+               <tr>
+                <th>Ana</th>
+                <th>Gomez</th>
+                <th>6677889900</th>
+                <th><button>Editar</button></th>
+               </tr>
+            </tbody>
+        </table>
+        <!--Contenedor no se presentan de manera visual son agrupadores de varios elementos dentro de html-->
+        <!--header, nav, body, footer aside section div es un contenedor-->
+        <div>
+            <h4>Contenedor div</h4>
+            <p>Este es un contenedor div que agrupa varios elementos.</p>
+            <button>Actualizar</button>
+            <button>Eliminar</button>
+            <button>Guardar</button>
+        </div>
+        <!--Formularios conjunto de elementos que sirven para presentar, recuperar o capturar informacion-->
+        <!--form es el elemento principal para los formularios-->
+        <!--Acction permite la capturacion de un elemento que genera un eventoboton con un url-->
+        <form action="https://www.google.com">
+            <h4>Formulario de Estudiante</h4>
+            <!--label sirve para etiquetar los inputs 
+            ya que tiene el atributo for 
+            permitiendo la vinculacion del input-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            <br>
+            <label for="email">Correo Electronico:</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su correo electronico">
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escriba su mensaje aqui"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+            <br>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" name="fecha" id="fecha">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Ingrese su password">
+            <button>Guardar</button>
+        </form>
+        <!--todo elemento html tiene un atributo que es el id, el id sirve para buscar al elemento
+        y poder acceder o tambien sirve para rederenciar el elemento-->
+        <!--Multimedia-->
+        <!--img alt es un atributo que permite mediante un texto decir que no se pudo presentar la imagen-->
+        <img src="./img/atomo.png" 
+        alt="No se pudo presentar la imagen" width="150" height="200">
+        <br>
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type ="video/mp4">
+        </video>
+    </section>
+</body>
+</html>
