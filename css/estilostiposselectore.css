@@ -1,0 +1,50 @@
+/* 2. selector por clase */
+.titulos{
+    color: yellow;
+    font-size: 30px;
+    background: gray;
+    border: 5px solid rgb(0, 34, 98);
+}
+/* 4. selector por id */
+#id_titulo{
+    color: lime;
+    font-size: 35px;
+    background: black;
+    border: 4px dashed rgb(188, 2, 188);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* 4. selector pseudo clase */
+i:hover{
+    color: black;
+    font-size: 25px;
+    background: rgb(215, 133, 19);
+    border: 3px dotted navy;
+}
+input:focus{
+    background-color: rgb(222, 222, 120);
+    border: 30px solid rgb(255, 0, 238);
+    font-size: 50px;
+    
+}
+/* selector por atributo */
+[id]{
+    background-color: rgb(120, 222, 222);
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 20px;
+
+}
+img[alt="No 1"]{
+    /*a todos los elementos de con el atributo No 1 se aplica los estilos */
+    width: 80px;
+    height: 50px;
+}
+
+img[alt*="uce"]{
+    /*a todos los elementos de con el atributo No 1 se aplica los estilos */
+    width: 120px;
+    height: 150px;
+}
+/* selector universal */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
