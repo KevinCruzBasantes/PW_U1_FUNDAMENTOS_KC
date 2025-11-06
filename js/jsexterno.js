@@ -51,3 +51,89 @@ function multiplicar(num1, num2) {
 function dividir(num1, num2) {
     return num1 / num2;
 }
+function fundamentosJS(){
+    /* Tipos de variables*/
+    var nombre = "Kevin";
+    let apellido = "Cruz";
+    let apellido2 = 15;
+    apellido2 = "Hola"; //reasignacion de variable
+    let arreglo = [1, 2, 3, 4, 5];
+    let dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
+    const PI = 3.1416;
+    const IVA = 0.16;
+    console.log("Fundamentos JS");
+    console.log("Nombre: " + nombre + " " + apellido);
+    console.log(arreglo); 
+    //Arreglos
+    const arrelosDias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
+    arrelosDias.push("Sabado");
+    console.log(arrelosDias);
+    arrelosDias.unshift("Dias");
+    console.log(arrelosDias);
+    console.log(arrelosDias[0]);
+    //Manejo de nulos undefined y vacio
+    arrelosDias.push(null);
+    arrelosDias.push("");
+    console.log(arrelosDias);
+    console.log(arrelosDias[9]);
+    const numerosPares = [2,4,6,8];
+    const numerosImpares = [1,3,5,7,9];
+    const numerosTotales =numerosImpares.concat(numerosPares);
+    console.log(numerosTotales);
+
+    //Sentencias de Control
+    let edad = 15;
+    if(edad>=18){
+        console.log("Es mayor de edad");
+    }else{
+        console.log("Es menor de edad");
+    }
+
+    let dia = "Lunes";
+    switch(dia){
+        case "Lunes":
+            console.log("Es Lunes");
+            break;
+        case "Martes":
+            console.log("Es Martes");
+            break;
+        default:
+            console.log("No es ninguno de estos dias");
+    }
+    for(let i =0; i<5; i++){
+        console.log("El valor de i es: "+ i);
+    }
+    const frutas = ["Manzana", "Banana", "Cereza","Papaya"];
+    for(let fruta of frutas){
+        console.log("Fruta: "+ fruta);
+    }
+    //Manejo de objetos
+    const profesor = {
+        nombre: "Edison",
+        apellido: "Cayambe",
+        edad: 35,
+        ecuatorino: true,
+        genero: 'M',
+        ciudad: "Quito"
+    }
+    console.log(profesor);
+    console.log(profesor.nombre);
+    profesor.apellido="Lopez";
+    console.log(profesor);
+
+    if(profesor.ciudad === "Quito"){
+        console.log("Es quiteño");
+
+    }
+    if(profesor.edad !== 36){
+        console.log("Es diferente de 36");
+
+    }else{
+        console.log("Es 36 ");
+    }
+    //for para iterar un objeto
+    for (let clave in profesor){
+        console.log(clave);
+        console.log(profesor[clave]);
+    }
+}
