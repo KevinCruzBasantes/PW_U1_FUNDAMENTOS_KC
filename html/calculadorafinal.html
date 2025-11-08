@@ -4,38 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora FINAL</title>
+    
+    <link rel="stylesheet" href="../css/calculadora.css">
+    <script src="../js/calculadorafinal.js"></script>
 </head>
 <body>
-    <header></header>
-    <nav></nav>
-    <section>
-        <div id="calculadora">
-            /*es el display de la calculadora*/
-            <label for=""></label>
-            <button >C</button>
-            <button>&larr;</button>
-            <button>%</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-            
-        </div>
-    </section>
-    <aside></aside>
-    <footer></footer>
-    
+    <div class="container">
+        <header>
+            Calculadora
+        </header>
+        <nav>
+            Barra de navegacion
+        </nav>
+        <section>
+            <div id="calculadora">
+                
+                <!--<label id="display" for="" >0+1</label>-->
+                <div id="display"></div>
+                <button onclick="mostrardisplay(valor)">C</button>
+                <button>&larr;</button>
+                <button onclick="mostrardisplay('%')">%</button>
+                <button>/</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>*</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>-</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>+</button>
+                <button>0</button>
+                <button>.</button>
+                <button class="col2">=</button>
+                
+            </div>
+        </section>
+        <aside></aside>
+        <footer>Pie de pagina</footer>
+    </div>
 </body>
 </html>

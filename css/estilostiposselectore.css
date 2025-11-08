@@ -5,7 +5,7 @@
     background: gray;
     border: 5px solid rgb(0, 34, 98);
 }
-/* 4. selector por id */
+/* 3. selector por id */
 #id_titulo{
     color: lime;
     font-size: 35px;
