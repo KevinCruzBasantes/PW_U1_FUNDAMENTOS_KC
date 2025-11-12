@@ -21,25 +21,26 @@
                 
                 <!--<label id="display" for="" >0+1</label>-->
                 <div id="display"></div>
-                <button onclick="mostrardisplay(valor)">C</button>
-                <button>&larr;</button>
+                <button onclick="borrarTodo()">C</button>
+                <button onclick="borrarCaracter()">&larr;</button>
                 <button onclick="mostrardisplay('%')">%</button>
-                <button>/</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>*</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-                <button>0</button>
-                <button>.</button>
-                <button class="col2">=</button>
+                <button onclick="mostrardisplay('/')">/</button>
+                <button onclick="mostrardisplay('7')">7</button>
+                <button onclick="mostrardisplay('8')">8</button>
+                <button onclick="mostrardisplay('9')">9</button>
+                <button onclick="mostrardisplay('*')">*</button>
+                <button onclick="mostrardisplay('4')">4</button>
+                <button onclick="mostrardisplay('5')">5</button>
+                <button onclick="mostrardisplay('6')">6</button>
+                <button onclick="mostrardisplay('-')">-</button>
+                <button onclick="mostrardisplay('1')">1</button>
+                <button onclick="mostrardisplay('2')">2</button>
+                <button onclick="mostrardisplay('3')">3</button>
+                <button onclick="mostrardisplay('+')">+</button>
+                <button onclick="mostrardisplay('0')">0</button>
+                <button onclick="mostrardisplay('.')">.</button>
+                <button class="col2" onclick="mostrardisplay('='); calcular();">=</button>
+
                 
             </div>
         </section>

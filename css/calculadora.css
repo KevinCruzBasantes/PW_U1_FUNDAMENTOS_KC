@@ -3,25 +3,29 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  
 }
 #calculadora{
+    border: 4px solid black;
     display: grid;
     grid-template-columns: 75px 75px 75px 75px;
     grid-template-rows: 75px 75px 75px 75px 75px 75px;
-    background: greenyellow;
-    border-radius: 15px;
+    background: rgb(83, 120, 28);
+    border-radius: 35px;
     padding: 25px;
 }
 #display{
+    background-color: rgb(185, 158, 158);
     grid-column: span 4;
-    border: 1px solid black ;
-    text-align: right;
-    padding-bottom: 20px;
+    border: 5px solid rgb(0, 0, 0) ;
+    text-align: center;
+    padding-bottom: 30px;
     padding-top: 10px;
-    padding-right: 90px;
+    padding-right: 1px;
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 35px;
     border-radius: 15px;
+
 }
 .col2{
     grid-column: span 2;
@@ -31,7 +35,7 @@ button{
     margin: 7px;
     border-radius: 35px;
     border: none;
-    background: yellow;
+    background: rgb(255, 255, 0);
     font-size: 25px;
     color: black;
     font-family: 'Times New Roman', Times, serif;
