@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: rgb(190, 223, 231);
+}
+p:before{
+    /*habilita el tipo nombre de p*/
+    content: attr(type);
+    /*ocupa el espacio completo del elemento p
+     para crear un salto de linea*/
+    display: block;
+    font-size: 20px;
+    color: rgb(132, 0, 255);
+    margin-bottom: 20px;
+}
+input{
+    width: 370px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(255, 91, 91);
+    background: none;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+}
+input:focus{
+    /*outline quita el borde al seleccionar el input*/
+    outline: none;
+    border-bottom: 5px solid rgb(254, 0, 0);
+}
+.formulario{
+    border: 2px solid rgb(0, 4, 255);
+    background-color: azure;
+    border-radius: 10px;
+    padding: 10px 40px;
+    box-shadow: 15px 30px rgb(223, 139, 94);
+    
+}
+button{
+    background-color: rgb(246, 255, 147);
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: rgb(0, 8, 119);
+    margin-top: 10px;
+    font-size: large;
+}
+.centrarB{
+    display: flex;
+    justify-content: center;
+}
+h2, header{
+color: rgb(0, 8, 119);
+border-bottom: 2px solid rgb(6, 8, 162);
+font-size: 25px;
+}
+
