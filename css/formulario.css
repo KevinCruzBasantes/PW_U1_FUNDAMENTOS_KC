@@ -15,10 +15,10 @@ p:before{
     display: block;
     font-size: 20px;
     color: rgb(132, 0, 255);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 input{
-    width: 370px;
+    width: 280px;
     height: 30px;
     border: none;
     border-bottom: 2px solid rgb(255, 91, 91);
@@ -44,7 +44,7 @@ button{
     padding: 10px 30px;
     border-radius: 30px;
     color: rgb(0, 8, 119);
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: large;
 }
 .centrarB{
@@ -54,6 +54,20 @@ button{
 h2, header{
 color: rgb(0, 8, 119);
 border-bottom: 2px solid rgb(6, 8, 162);
-font-size: 25px;
+font-size: 35px;
+}
+.msg_error{
+    background: orangered;
+    border-left: 20px solid yellow;
+    padding: 10px;
+    color: white;
+    display: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.error_ast{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
 }
 
