@@ -1,0 +1,90 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p:before{
+    /*habilita el tipo nombre de p*/
+    content: attr(type);
+    /*ocupa el espacio completo del elemento p
+     para crear un salto de linea*/
+    display: block;
+    font-size: 20px;
+    color: rgb(27, 40, 221);
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.formulario{
+    border: 2px solid rgb(200, 200, 207);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px 40px;
+    
+    
+}
+input{
+    width: 280px;
+    height: 30px;
+    border: all;
+    border-radius: 50px;
+    border: 1px solid rgb(204, 202, 202);
+    background: none;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+}
+.col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+
+    
+}
+.tarjeta{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px; /* espacio entre formulario e imagen */
+}
+
+/* Ajusta el contenedor de la imagen */
+.imagen{
+    width: 300px;
+    height: 200px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding-right: 70px;
+}
+button{
+    background-color: rgb(74, 50, 179);
+    padding: 10px 270px;
+    border-radius: 30px;
+    color: rgb(252, 249, 249);
+    margin-top: 5px;
+    font-size: large;
+}
+.msg_error{
+    background: rgb(68, 0, 255);
+    border-left: 20px solid rgb(2, 2, 2);
+    padding: 10px;
+    color: white;
+    display: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.error_ast{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+input:focus{
+    /*outline quita el borde al seleccionar el input*/
+    outline: none;
+    border-bottom: 5px solid rgb(254, 0, 0);
+}

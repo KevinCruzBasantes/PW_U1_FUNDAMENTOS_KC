@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioFormulacio</title>
+    <link rel="stylesheet" href="../css/formularioejercicio.css">
+    <script src="../js/formularioejercicio.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header></header>
+        <nav></nav>
+
+        <div class="formulario">
+
+            <div class="tarjeta">
+                <!-- Imagen al lado -->
+                <div class="imagen">
+                    <img src="../img/tarjeta.png" alt="No1 uce" width="300" height="200">
+                </div>
+                <section>
+                    <form action="">
+                        <h2>Payment Details</h2>
+
+                        <div id="id_msg_error" class="msg_error"></div>
+
+                        <p type="CardHolder Name:">
+                            <span id="id_error_nombre" class="error_ast"></span>
+                            <input type="text" id="id_nombre">
+                        </p>
+
+                        <p type="CardNumber:">
+                            <span id="id_error_card" class="error_ast"></span>
+                            <input type="number" id="id_card">
+                        </p>
+
+                        <div class="col">
+                            <p type="Fecha Expiracion:">
+                                <span id="id_error_fe" class="error_ast"></span>
+                                <input type="date" id="id_fechaExp">
+                            </p>
+
+                            <p type="csv:">
+                                <span id="id_error_csv" class="error_ast"></span>
+                                <input type="password" id="id_csv">
+                            </p>
+                        </div>
+
+                        <div class="centrarB">
+                            <button onclick="guardar()">Confirm</button>
+                        </div>
+                    </form>
+                </section>
+
+
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>
